@@ -1,0 +1,24 @@
+client :
+
+todo
+	nom et id_secrête à afficher
+	faire section à propos
+	
+
+
+admin :
+
+todo
+
+
+	responsive jusqu'à tablette pas de téléphone 
+	
+	
+issues
+	problème avec les noms composés
+	cleaning the form after submitting marche pas
+	
+
+DB :
+
+	resume_heros trop court ; seulement 1000 char ; changer pour 5000 ;

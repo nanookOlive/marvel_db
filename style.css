@@ -1,0 +1,289 @@
+@viewport{
+    width:device-width;
+    zoom:1;
+}
+body{
+    margin:0 ;
+    width:100vw;
+    font-family: 'Marvel', sans-serif;
+    background-image: url('./fond.jpg') ;
+}
+
+/*-----------------------banniere---------------------------------------*/
+.banniere
+{
+    width:100%;
+    height:20%;
+    background-color:#ed1d24de;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow : 5px 5px 30px 15px black;
+    z-index: 99;
+
+
+}
+h1{
+    margin:0;
+    font-size:9rem;
+    font-weight: bold;
+    letter-spacing: -15px;
+    margin-left:30px;
+}
+.btn_a_propos
+{
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 70px;
+    transition: all 500ms ease;
+    border-radius:15px;
+    padding:10px;
+}
+
+.btn_a_propos:hover{
+
+    background-color: #fff;
+    color:#ED1D24;
+}
+.a_propos{
+
+    display:none;
+    position: absolute;
+    width:300px;
+    height:500px;
+    top:200px;
+    right:0;
+    
+}
+
+/*--------------------liste heros---------------------------*/
+.liste_heros{
+
+    position: fixed;
+    width:500px;
+    height:70%;
+    margin-top: 50px;
+    margin-left:40px;
+    overflow: scroll;
+    scrollbar-width : none;
+    background-color: #ed1d24;
+    
+}
+input{
+
+    border:none;
+}
+.nom_hero{
+
+    width:90%;
+    height:100px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:3rem;
+    color:#fff;
+    background-color: #ED1D24;
+    cursor:pointer;
+    transition:all 500ms ease;
+    border-bottom: 1px solid black;
+    font-weight: lighter;
+
+}
+.nom_hero:hover{
+
+    box-shadow: 15px 5px 5px 5px rgba(0, 0, 0, 0.273);
+    color:#ED1D24;
+    background-color: #fff;
+    border-bottom: none;
+}
+
+/*--------------------affichage du hero--------------------*/
+
+.affichage_hero{
+
+    background-color: rgba(255, 255, 255, 0.608);
+    height:70%;
+    width:1100px;
+    position: absolute;
+    right:0px;
+    margin-right:50px;
+    top:225px;
+    display: flex;
+    flex-direction: column;
+}
+.bloc_haut{
+    display: flex;
+    margin-top:50px;
+}
+.avatar img{
+
+    width:300px;
+    height:300px;
+    margin: 10px;
+}
+
+/*----------affichage cara hero ----------------*/
+.cara_hero{
+
+    width:50%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:200px;
+}
+
+
+.barre_cara{
+
+    width:70%;
+    height : 40px;
+    border:1px solid black;
+    transform: skewX(-40deg);
+    align-self: flex-start;
+}
+
+.cara{
+
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    
+}
+.petite_barre{
+
+    height:40px;
+    background-color: #ed1d24;
+    
+}
+
+
+/*--------------------texte de présentation du heros ---------------------------------------------------------*/
+
+.resume_hero{
+
+    margin-top:90px;
+    font-size:1.8rem;
+    padding:10px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.nom{
+
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+
+/*--------------------------------------------------média queries---------------------------------------------------*/
+    /*--------------screen 781 & 1700 -----------------*/
+@media  (max-width:1701px)
+{
+    
+/*----------------body--------------------------*/
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items : center ;
+}
+
+
+/*------------------bannière----------------------------*/
+
+.banniere{
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:150px;
+}
+
+.banniere h1
+{
+    font-size: 5rem;
+    letter-spacing: -3px;
+    border : solid 3px #fff;
+    padding-left: 5px;
+    padding-right :5px;
+    margin-left:0px;
+}
+.btn_a_propos{
+    display:none;
+}
+/*------------------liste de héros -----------------------*/
+
+.liste_heros{
+
+    position: relative;
+    width:300px;
+    height :100px;
+    margin-left: 0px;
+    scrollbar-width: auto;
+
+}
+.nom_hero{
+
+    width:100%;
+    margin-left:0px;
+}
+    /*-------------------affichage héros ---------------------------*/
+
+.affichage_hero{
+
+    position: relative;
+    width:90%;
+    margin-right: 0px;
+    top:0px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.658);
+}
+.cara_hero{
+
+    margin-left:10%;
+}
+}
+
+        /*--------------screen < 780 ---------------------*/
+
+@media (max-width:780px)
+{
+    .banniere h1{
+
+        font-size:3rem;
+    }
+    .liste_heros{
+
+        scrollbar-width: auto;
+    }
+/*-------------------------affichager héro----------------------*/
+    .bloc_haut{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar img{
+
+        width:150px;
+        height:150px;
+    }
+    .cara{
+    
+        width:300px;
+    }
+    .cara_hero{
+    
+        width:300px;
+        align-items: center;
+    }
+    .barre_cara{
+    
+        width:250px;
+    }
+}

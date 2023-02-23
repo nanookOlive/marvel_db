@@ -1,0 +1,165 @@
+body{
+
+    margin:0;
+    font-family: 'Marvel', sans-serif;
+    background-image: url('./fond.jpg') ;
+    display: flex;
+    justify-content: center;
+}
+
+.banniere
+{
+    position: fixed;
+    width:100%;
+    height:200px;
+    background-color:#ed1d24de;
+    color:#fff;
+    box-shadow : 5px 5px 30px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.banniere h1{
+
+    font-size:3rem;
+}
+
+/*---------------------Menu--------------------------------*/
+
+.menu{
+    display: flex;;
+}
+.cat_menu{
+
+    cursor: pointer;
+    font-size: 2rem;
+    margin:20px;
+    padding:5px;
+    transition :all 500ms ease;
+}
+.cat_menu:hover{
+
+    background-color: #fff;
+    color:#ed1d24de;
+
+}
+
+/*-----------------add hero-----------------------------------------*/
+
+
+#add_heros{
+
+    position:absolute;
+    width:70%;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.861);
+    transition:all 500ms ease;
+    top:250px;
+    transform:translateY(-200%);
+    display:flex;
+    justify-content: center;
+}
+#formu{
+
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 100%;
+    font-size:1.5rem;
+}
+#boubou{
+
+    margin-top:20px;
+    width:100px;
+    height:50px;
+    align-self:center;
+    background-color: #ed1d24de;
+    color:#FFF;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size:1.3rem;
+    transition:all 500ms ease;
+}
+#boubou:hover{
+
+    background-color: #fff;
+    color:#ed1d24de;
+    box-shadow: 0px 0px 20px #ed1d24de;
+}
+#supp_heros{
+
+    
+    position:absolute;
+    width:70%;
+    height:500px;
+    top:300px;
+    background-color: rgba(255, 255, 255, 0.861);
+    transition:all 700ms ease;
+    transform:translateY(-500%);
+    font-size:1.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+#remove_hero{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+select,button{
+
+    color:#fff;
+    background-color: #ed1d24de;
+    width:200px;
+    height:50px;
+    font-size:1.5rem;
+    text-align: center;
+    border:none;
+    margin:50px;
+    cursor:pointer;
+    transition:all 500ms ease;
+}
+
+#update_heros{
+
+    
+    position:absolute;
+    width:70%;
+    height:500px;
+    top:300px;
+    background-color: rgba(255, 255, 255, 0.861);
+    transition:all 700ms ease;
+    transform:translateY(-200%);
+    font-size:1.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+button:hover{
+
+    background-color:#fff;
+    color:#ed1d24de;
+    box-shadow: 0px 0px 15px #ed1d24de;
+}
+#add_heros.active{
+
+    transform: translateY(0%);
+}
+#supp_heros.active{
+
+    transform:translateY(0%);
+}
+#update_heros.active{
+
+    transform:translateY(0%);
+
+    
+}

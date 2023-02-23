@@ -1,0 +1,42 @@
+body{
+    margin:0 ;
+    width:100vw;
+    height: 100vh;
+    font-family: 'Marvel', sans-serif;
+    background-image: url('./fond.jpg') ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message_validation{
+
+    width:70%;
+    height:500px;
+    background-color: #ed1d24be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    
+}
+span{
+
+    margin:30px;
+    color:#fff;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color:#fff;
+    border:2px solid #fff;
+    padding:10px;
+    transition: all 500ms ease;
+    
+}
+a:hover{
+    background-color: #fff;
+    color:#ed1d24de;
+}
