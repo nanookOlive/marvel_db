@@ -7,4 +7,4 @@ nanookpandora.com/marvel_db
 
 Coté serveur :
 
-nanookpandora.com/marvel_db/admin/admin.php
+nanookpandora.com/marvel_admin/admin.php
