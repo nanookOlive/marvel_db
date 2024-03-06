@@ -1,10 +1,3 @@
-# marvel_db
-un premier crud en php.
-
-Coté client :
-
-nanookpandora.com/marvel_db
-
-Coté serveur :
-
-nanookpandora.com/marvel_admin/admin.php
+# <center>Marvel Database (*php vanilla*)<center>
+Parce qu'il faut bien commencé quelque part, j'ai débuté en PHP en réalisant ce CRUD [coté client](http://nanookpandora.com/marvel_db/), [coté admin](nanookpandora.com/marvel_admin/admin.php).
+Première interaction avec une base données, quelques validations de champs dans les formulaires, aucun patron de conception ^^ 
